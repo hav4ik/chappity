@@ -1,5 +1,12 @@
 #!/usr/bin/python3
 
+"""
+This script is a modified version of the one found here:
+https://picamera.readthedocs.io/en/release-1.13/recipes2.html#web-streaming
+
+All modifications were made with the help of GPT-4.
+"""
+
 import io
 import logging
 import socketserver
@@ -96,6 +103,8 @@ class PiCamStream:
 
     def start_stream(self, port=8000):
         self.picam2 = Picamera2()
+        # The following camera setting, according to picam2.sensor_modes, gives
+        # the largest FOV for the HQ camera.
         self.picam2.configure(self.picam2.create_video_configuration(
             main={"size": (1640, 1232), "format": "YUV420"}))
         self.output = StreamingOutput()

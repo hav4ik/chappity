@@ -1,5 +1,9 @@
 #!/usr/bin/python3
 
+"""
+This script was fully written by GPT-4.
+"""
+
 import cv2
 import numpy as np
 import requests
