@@ -1,4 +1,12 @@
 #!/usr/bin/env python3
+
+"""
+This code is written with the help of GPT-4.
+Most of the code was written by GPT-4, I only added the class wrapper.
+Full link to the chat can be found here:
+https://chat.openai.com/share/51ce3ae0-606b-474f-a25d-c9091a5294c5
+"""
+
 from datetime import datetime
 from typing import List, Tuple
 from uuid import uuid4
