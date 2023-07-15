@@ -1,4 +1,9 @@
 video_stream:
+  # Network config
   rpi_local_ip: "10.0.0.140"  # IP address at home
   rpi_vpn_ip: "172.28.41.74"  # ZeroTier VPN static IP
   stream_port: 8000
+
+  # Camera config
+  size: [1640, 1232]
+  format: YUV420
